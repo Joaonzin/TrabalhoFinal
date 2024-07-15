@@ -10,20 +10,18 @@ namespace Trabalho
     {
         public string Nome { get; set; }
         public double Preco { get; set; }
-        public int QuantidadeEstoque { get; set; }
+        public int Quantidade { get; set; }
 
-        public Produto(string nome, double preco, int quantidadeEstoque)
+        public Produto(string nome, double preco, int quantidade)
         {
             Nome = nome;
             Preco = preco;
-            QuantidadeEstoque = quantidadeEstoque;
+            Quantidade = quantidade;
         }
 
         public override string ToString()
         {
-            return $"Produto: {Nome}, Preço: {Preco:C}, Quantidade em Estoque: {QuantidadeEstoque}";
+            return $"{Nome} - R${Preco:F2} - Quantidade: {Quantidade}";
         }
     }
-}
-
 }

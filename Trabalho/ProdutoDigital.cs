@@ -11,17 +11,11 @@ namespace Trabalho
         public double TamanhoArquivo { get; set; }
         public string Formato { get; set; }
 
-        public ProdutoDigital(string nome, double preco, int quantidadeEstoque, double tamanhoArquivo, string formato)
-            : base(nome, preco, quantidadeEstoque)
+        public ProdutoDigital(string nome, double preco, int quantidade, double tamanhoArquivo, string formato)
+            : base(nome, preco, quantidade)
         {
             TamanhoArquivo = tamanhoArquivo;
             Formato = formato;
         }
-
-        public override string ToString()
-        {
-            return $"Produto Digital: {Nome}, Preço: {Preco:C}, Quantidade em Estoque: {QuantidadeEstoque}, Tamanho do Arquivo: {TamanhoArquivo} MB, Formato: {Formato}";
-        }
     }
-}
 }

@@ -10,17 +10,10 @@ namespace Trabalho
     {
         public int Periodo { get; set; }
 
-        public Assinatura(string nome, double preco, int quantidadeEstoque, int periodo)
-            : base(nome, preco, quantidadeEstoque)
+        public Assinatura(string nome, double preco, int quantidade, int periodo)
+            : base(nome, preco, quantidade)
         {
             Periodo = periodo;
         }
-
-        public override string ToString()
-        {
-            return $"Assinatura: {Nome}, Preço: {Preco:C}, Quantidade em Estoque: {QuantidadeEstoque}, Período: {Periodo} meses";
-        }
     }
-}
-
 }
