@@ -10,16 +10,10 @@ namespace Trabalho
     {
         public int Duracao { get; set; }
 
-        public Servico(string nome, double preco, int quantidadeEstoque, int duracao)
-            : base(nome, preco, quantidadeEstoque)
+        public Servico(string nome, double preco, int quantidade, int duracao)
+            : base(nome, preco, quantidade)
         {
             Duracao = duracao;
         }
-
-        public override string ToString()
-        {
-            return $"Serviço: {Nome}, Preço: {Preco:C}, Quantidade em Estoque: {QuantidadeEstoque}, Duração: {Duracao} horas";
-        }
     }
-}
 }

@@ -11,17 +11,11 @@ namespace Trabalho
         public double Peso { get; set; }
         public string Dimensoes { get; set; }
 
-        public ProdutoFisico(string nome, double preco, int quantidadeEstoque, double peso, string dimensoes)
-            : base(nome, preco, quantidadeEstoque)
+        public ProdutoFisico(string nome, double preco, int quantidade, double peso, string dimensoes)
+            : base(nome, preco, quantidade)
         {
             Peso = peso;
             Dimensoes = dimensoes;
         }
-
-        public override string ToString()
-        {
-            return $"Produto Físico: {Nome}, Preço: {Preco:C}, Quantidade em Estoque: {QuantidadeEstoque}, Peso: {Peso} kg, Dimensões: {Dimensoes}";
-        }
     }
-}
 }
